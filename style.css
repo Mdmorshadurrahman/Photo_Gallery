@@ -1,0 +1,72 @@
+/* using google font on body */
+body {
+    font-family: 'Rochester', cursive;
+
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    border: 2px dashed rgb(202, 174, 211);
+    background-color: rgb(228, 139, 246);
+}
+
+section {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.photo {
+    padding: 10px 10px;
+    border: 2px none blue;
+    box-shadow: 2px 2px 25px lightgray;
+    margin-bottom: 5px;
+    border-radius: 1%;
+}
+
+section img {
+    width: 100%;
+    height: 60vh;
+    /* padding: 10px 13px; */
+    border-radius: 50%;
+}
+
+/* to make icons aligned */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.comment {
+    border: 2px solid blue;
+    width: 98.5%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+@media screen and (max-width:576px) {
+    section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header {
+        background-color: black;
+    }
+
+    header>h1 {
+        color: white;
+    }
+
+    body {
+        background-color: blue;
+    }
+
+    .photo {
+        background-color: pink;
+    }
+
+}
